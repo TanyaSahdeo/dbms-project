@@ -1,0 +1,8 @@
+<?php
+function add($a1,$a2)
+{
+$c=$a+$b;
+echo"add : $c <br/>";
+}
+add(10,20)
+?>

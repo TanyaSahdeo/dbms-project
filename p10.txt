@@ -1,0 +1,5 @@
+<?php
+echo strrev("011eh");
+echo str_repeat("hai",3);
+echo strtoupper("hai");
+?>

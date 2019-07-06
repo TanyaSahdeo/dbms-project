@@ -1,0 +1,147 @@
+body {
+			  height: 100vh;
+			  display: flex;
+			  flex-direction: column;
+			  justify-content: center;
+			  align-items: center;
+			  font-family: 'Lato';
+			  box-shadow: inset 0 0 0 10px white, inset 0 0 0 15px crimson;
+			  overflow: hidden;
+			}
+
+			h1 {
+			  margin-bottom: 36px;
+			  font-size: 36px;
+			  font-weight: 300;
+			}
+
+			.menu__list {
+
+			}
+
+			.menu__item {
+			  float: left;
+			}
+
+			.menu__link {
+			  position: relative;
+			  display: block;
+			  padding: 30px 60px;
+			  font-size: 20px;
+			  text-decoration: none;
+			  perspective: 600px;
+			  transform-style: preserve-3d;
+			  perspective-origin: 50% 0;
+			  
+			  &:before,
+			  &:after {
+				content: attr(title);
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				background: crimson;
+				color: white;
+				line-height: 60px;
+				transition: all .3s ease-out;
+			  }
+			  
+			  &:before {
+				transform-origin: center top;
+				transform: rotateX(0) translateY(0);
+
+			  }
+			  
+			  &:after {
+				transform-origin: center bottom;
+				transform: rotateX(-90deg) translateY(100%);
+				background: mix(black, crimson, 20);
+			  }
+			  
+			  &:hover {
+				&:before {
+				  transform: rotateX(90deg) translateY(-100%);
+				}
+				
+				&:after {
+				  transform: translateY(0) rotateX(0);
+				}
+			  }
+			}
+
+			.menu__item--dropdown {
+			  position: relative;
+			  
+			  &:hover {
+				.dropdown {
+				  transform: scaleY(1);
+				}
+			  }
+			}
+
+			.dropdown {
+			  position: absolute;
+			  top: 100%;
+			  left: 0;
+			  background: crimson;
+			  width: 100%;
+			  transform-origin: center top;
+			  transform: scaleY(0);
+			  transition: all .25s .1s ease-out;
+			}
+
+			.dropdown__item {
+			  
+			}
+
+			.dropdown__link {
+			  display: block;
+			  color: white;
+			  text-decoration: none;
+			  font-size: 20px;
+			  padding: 15px;
+			  transition: all .25s ease-out;
+			  
+			  &:hover {
+				background: mix(black, crimson, 20);
+			  }
+			}
+
+			@media (max-width: 800px) {
+			  body {
+				display: block;
+				box-shadow: none;
+			  }
+			  
+			  h1 {
+				display: none;
+			  }
+			  
+			  .menu__list {
+				position: fixed;
+				top: 0;
+				height: 100vh;
+				width: 20vw;
+				background: crimson;
+			  }
+			  
+			  .menu__item {
+				float: none;
+			  }
+			  
+			  .dropdown {
+				top: 0;
+				transform: translateX(0) scaleX(0);
+				transform-origin: right center;
+			  }
+			  
+			  .menu__item--dropdown {
+				&:hover {
+				  .dropdown {
+					 transform: translateX(100%) scaleX(1);
+				  }
+				}
+			  }
+			}

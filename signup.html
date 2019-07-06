@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title> </title>
+		
+		<style>
+			body {
+			
+			color: #fff;
+				
+				font-family: Lucida Calligraphy;
+				padding: 1% 0;
+				background-image: url("a.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-color: #CBAA88;
+				
+			}
+			img{
+				width: 23%;
+				margin: 1%;
+				vertical-align: middle;
+				transition: all 2s, transform .5s, box-shadow .5s;
+				}
+			img:hover {
+				box-shadow: 6px 6px 20px
+				rgba(0,0,0,0.6);
+				transform: scale(1.02);
+				}
+			img:focus {
+				box-shadow: 12px 12px 25px
+				rgba(0,0,0,0.7);
+				width: 40%;
+				transform: none;
+				}
+				
+			@media only screen and (max-width: 940px) {
+				img {
+				width: 37%;
+				}
+				img:focus {
+				width: 60%;
+				margin: 0;
+				}
+			}
+			@media only screen and (max-width: 600px) {
+				img {
+					width: 65%;
+				}
+				img:focus {
+					width: 100%;
+					margin: 20px 0;
+				}
+			}
+			h1 {
+				color: #fff;
+			    text-shadow:
+			    0px 1px 0px #666,
+			    0px 2px 0px #555,
+			    0px 3px 0px #444,
+			    0px 4px 0px #333,
+				0px 5px 0px #222,
+			    0px 6px 0px #111,
+			    0px 7px 5px #000;
+				font-size: 2.9em;
+				}
+			h2 {
+				font-size: 2em;
+				font-family: Lucida Calligraphy;
+				color: #fff;
+			    text-shadow:
+			    0px 1px 0px #666,
+			    0px 2px 0px #555,
+			    0px 3px 0px #444,
+			    0px 4px 0px #333,
+				0px 5px 0px #222,
+			    0px 6px 0px #111,
+			    0px 7px 5px #000;
+				
+				}	
+				p{
+				color:#fff00f;
+				}
+				h1 marquee{
+			font-family: Lucida Calligraphy;
+			}
+			
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+	</head>
+	<body>
+		<form action= "signup.php" method="post">
+		<br>
+		
+		&nbsp <b>USER NAME*:</b>&nbsp&nbsp&nbsp&nbsp<input type="text" name="username" required>
+		<br>
+		<br>
+		&nbsp <b>PASSWORD*:</b>&nbsp&nbsp&nbsp&nbsp<input type="password" name="pass" required>
+		<br><br>
+		&nbsp <b>FIRST NAME*:</b>&nbsp&nbsp&nbsp&nbsp<input type="text" name="f_name"  required>
+		<br><br>
+		&nbsp <b>MIDDLE NAME:</b>&nbsp <input type="text" name="m_name" >
+		<br><br>
+		&nbsp <b>LAST NAME*:</b>&nbsp&nbsp&nbsp&nbsp<input type="text" name="l_name" required>
+		<br><br>
+		&nbsp <b>GENDER*:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="gender" value="MALE" required>MALE &nbsp &nbsp
+			   <input type="radio" name="gender" value="FEMALE" required>FEMALE
+			   <br><br>
+		&nbsp <b>PHONE NO*:&nbsp&nbsp&nbsp&nbsp</b><input type="number" name="phno" required>
+		<br><br>
+		&nbsp <b>DOB*:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="date" name="dob" required>
+		<br><br>
+		&nbsp <b>COUNTRY:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="country">
+		<br><br>
+		&nbsp <b>EMAIL*:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="email" name="email" required>
+		<br><br>
+		&nbsp
+		<input type="submit">
+		</form>
+	</body>
+</html>
+		

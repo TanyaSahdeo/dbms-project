@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title> </title>
+		
+		<style>
+			body {
+				text-align: center;
+				font-family: Lucida Calligraphy;
+				font-size: 1.4em;
+				padding: 1% 0;
+				background: url(https://previews.123rf.com/images/icemanphotos/icemanphotos1706/icemanphotos170600019/80691555-beach-background-beautiful-beach-landscape-tropical-nature-scene-palm-trees-and-blue-sky-summer-vaca.jpg);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				background-blend-mode: screen;
+				background-color: #CBAA88;
+				
+			}
+			img{
+				width: 23%;
+				margin: 1%;
+				vertical-align: middle;
+				transition: all 2s, transform .5s, box-shadow .5s;
+				}
+			img:hover {
+				box-shadow: 6px 6px 20px
+				rgba(0,0,0,0.6);
+				transform: scale(1.02);
+				}
+			img:focus {
+				box-shadow: 12px 12px 25px
+				rgba(0,0,0,0.7);
+				width: 40%;
+				transform: none;
+				}
+				
+			@media only screen and (max-width: 940px) {
+				img {
+				width: 37%;
+				}
+				img:focus {
+				width: 60%;
+				margin: 0;
+				}
+			}
+			@media only screen and (max-width: 600px) {
+				img {
+					width: 65%;
+				}
+				img:focus {
+					width: 100%;
+					margin: 20px 0;
+				}
+			}
+			h1 {
+				color: #fff;
+			    text-shadow:
+			    0px 1px 0px #666,
+			    0px 2px 0px #555,
+			    0px 3px 0px #444,
+			    0px 4px 0px #333,
+				0px 5px 0px #222,
+			    0px 6px 0px #111,
+			    0px 7px 5px #000;
+				}
+			h2 {
+				color: #000;
+			    text-shadow:
+			    0px 1px 0px #666,
+			    0px 2px 0px #555,
+			    0px 3px 0px #444,
+			    0px 4px 0px #333,
+				0px 5px 0px #222,
+			    0px 6px 0px #111,
+			    0px 7px 5px #000;
+				}	
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		<h1> <marquee>WELCOME TRAVEL ENTHUSIAST</marquee></h1>
+	
+		<h2>Tour Packages available</h2>
+		<p> <b>Click</b> on an image to enlarge it, you can also
+		use thr <b>tab key</b> to navigate to the next image.</p>
+		
+		<img tabindex="1" src="new.jpg" alt="Image of new york">
+		<img tabindex="2" src="lon.jpg" alt="Image of london"> 
+		<img tabindex="3" src="paris.jpg" alt="Image of paris">
+		<img tabindex="4" src="tokyo.jpg" alt="Image of tokyo">		 
+		<img tabindex="5" src="thai.jpg" alt="Image of Thailand">
+		<img tabindex="6" src="haw.jpg" alt="Image of hawaii">
+		
+	</body>
+	</head>
+</html>

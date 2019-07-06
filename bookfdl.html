@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title> </title>
+		
+		<style>
+			body {
+			
+			color: #fff;
+				
+				font-family: Lucida Calligraphy;
+				padding: 1% 0;
+				background-image: url("a.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-color: #CBAA88;
+				
+			}
+			img{
+				width: 23%;
+				margin: 1%;
+				vertical-align: middle;
+				transition: all 2s, transform .5s, box-shadow .5s;
+				}
+			img:hover {
+				box-shadow: 6px 6px 20px
+				rgba(0,0,0,0.6);
+				transform: scale(1.02);
+				}
+			img:focus {
+				box-shadow: 12px 12px 25px
+				rgba(0,0,0,0.7);
+				width: 40%;
+				transform: none;
+				}
+				
+			@media only screen and (max-width: 940px) {
+				img {
+				width: 37%;
+				}
+				img:focus {
+				width: 60%;
+				margin: 0;
+				}
+			}
+			@media only screen and (max-width: 600px) {
+				img {
+					width: 65%;
+				}
+				img:focus {
+					width: 100%;
+					margin: 20px 0;
+				}
+			}
+			h1 {
+				color: #fff;
+				font-family: Lucida Calligraphy;
+				text-align:center;
+			    text-shadow:
+			    0px 1px 0px #666,
+			    0px 2px 0px #555,
+			    0px 3px 0px #444,
+			    0px 4px 0px #333,
+				0px 5px 0px #222,
+			    0px 6px 0px #111,
+			    0px 7px 5px #000;
+				font-size: 2.5em;
+				}
+			h2 {
+				font-size: 2em;
+				font-family: Lucida Calligraphy;
+				color: #fff;
+			    text-shadow:
+			    0px 1px 0px #666,
+			    0px 2px 0px #555,
+			    0px 3px 0px #444,
+			    0px 4px 0px #333,
+				0px 5px 0px #222,
+			    0px 6px 0px #111,
+			    0px 7px 5px #000;
+				
+				}	
+				b{
+					font-size: 1.1em;
+				font-family: Lucida Calligraphy;
+				color: #fff;
+			    text-shadow:
+			    0px 1px 0px #666,
+			    0px 2px 0px #555,
+			    0px 3px 0px #444,
+			    0px 4px 0px #333;
+				}
+				
+				p{
+				color:#fff00f;
+				}
+				h1 marquee{
+			font-family: Lucida Calligraphy;
+			}
+			.xyz{
+				background: #fff;
+				color:#333;
+				padding: 0.50;
+				margin:0.50;
+				text-shadow:
+				0px 1px 0px #666,
+				0px 2px 0px #555;
+			}
+			
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+	</head>
+	<body>
+			<body>
+	<div class="main">
+			<div class="logo">
+				<img src="logo.png">
+			</div>
+			<ul>
+				<li  ><a href="index1.html"> Home </a></li>
+				<li class="active"><a href="packagepage.html"> Packages </a></li>
+				<li><a href="gallery.html"> Gallery </a></li>
+				<li><a href="about.html"> About </a></li>
+				<li><a href="#"> Contact </a></li>
+			</ul>
+	</div>
+	<br><br><br><br><br><br>
+		
+		<form action= "bookfdl.php" method="post">
+		<br>
+		<h1>FLIGHT BOOKING</H1>
+
+				&nbsp&nbsp<b>Select Airline</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select name="aline">
+					<option value="Indigo"><h4>Indigo</h4></option>
+					<option value="Air India"><h4>Air India</h4></option>
+					<option value="Jet Airways"><h4>Jet Airways</h4></option>
+				</select>
+				
+				
+
+		<br><br>
+		&nbsp <b>Flight date*:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="date" name="date" required><br><br>
+		&nbsp&nbsp<b>Select Time *</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select name="time">
+					<option value="12:00"><h4>12:00</h4></option>
+					<option value="16:00"><h4>16:00</h4></option>
+					<option value="20:00"><h4>20:00</h4></option>
+				</select>
+				<br>
+				<br>
+		&nbsp <b>Source City*:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b class="xyz">Delhi</b><br><br>
+		&nbsp <b>Destination City*:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b class="xyz">London</b><br><br>
+		<h2>Enter Your Personal Details</h2><br>
+		
+		&nbsp <b>USER NAME*:</b>&nbsp&nbsp&nbsp&nbsp<input type="text" name="username" required>
+		<br><br>
+		&nbsp <b>FIRST NAME*:</b>&nbsp&nbsp&nbsp&nbsp<input type="text" name="f_name"  required>
+		<br><br>
+		&nbsp <b>LAST NAME*:</b>&nbsp&nbsp&nbsp&nbsp<input type="text" name="l_name" required>
+		<br><br>
+		&nbsp <b>PHONE NO*:&nbsp&nbsp&nbsp&nbsp</b><input type="number" name="phno" required>
+		<br><br>
+		&nbsp <b>EMAIL*:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="email" name="email" required>
+		<br><br>
+		<input type="submit">
+		</form>
+	</body>
+</html>
+		

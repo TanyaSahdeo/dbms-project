@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title> </title>
+		
+		<style>
+			body {
+			color: #fff;
+				text-align: center;
+				font-family: Lucida Calligraphy;
+				padding: 1% 0;
+				background-image: url("a.jpg");
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				background-color: #CBAA88;
+				
+			}
+			img{
+				width: 23%;
+				margin: 1%;
+				vertical-align: middle;
+				transition: all 2s, transform .5s, box-shadow .5s;
+				}
+			img:hover {
+				box-shadow: 6px 6px 20px
+				rgba(0,0,0,0.6);
+				transform: scale(1.02);
+				}
+			img:focus {
+				box-shadow: 12px 12px 25px
+				rgba(0,0,0,0.7);
+				width: 40%;
+				transform: none;
+				}
+				
+			@media only screen and (max-width: 940px) {
+				img {
+				width: 37%;
+				}
+				img:focus {
+				width: 60%;
+				margin: 0;
+				}
+			}
+			@media only screen and (max-width: 600px) {
+				img {
+					width: 65%;
+				}
+				img:focus {
+					width: 100%;
+					margin: 20px 0;
+				}
+			}
+			h1 {
+				color: #fff;
+			    text-shadow:
+			    0px 1px 0px #666,
+			    0px 2px 0px #555,
+			    0px 3px 0px #444,
+			    0px 4px 0px #333,
+				0px 5px 0px #222,
+			    0px 6px 0px #111,
+			    0px 7px 5px #000;
+				font-size: 2.9em;
+				}
+			h2 {
+				font-size: 2em;
+				font-family: Lucida Calligraphy;
+				color: #fff;
+			    text-shadow:
+			    0px 1px 0px #666,
+			    0px 2px 0px #555,
+			    0px 3px 0px #444,
+			    0px 4px 0px #333,
+				0px 5px 0px #222,
+			    0px 6px 0px #111,
+			    0px 7px 5px #000;
+				
+				}	
+				p{
+				color:#fff00f;
+				}
+				h1 marquee{
+			font-family: Lucida Calligraphy;
+			}
+			
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+	</head>
+	
+	<body>
+	<div class="main">
+			<div class="logo">
+				<img src="logo.png">
+			</div>
+			<ul>
+				<li  ><a href="index1.html"> Home </a></li>
+				<li><a href="#"> Packages </a></li>
+				<li class="active"><a href="gallery.html"> Gallery </a></li>
+				<li><a href="about.html"> About </a></li>
+				<li><a href="#"> Contact </a></li>
+			</ul>
+		</div>
